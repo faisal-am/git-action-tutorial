@@ -3,7 +3,7 @@ name: Hello world workflow
 on:
     push:
         branches: main
-        workflow_dispactch:
+    
 
 jobs:
     hello:
@@ -11,12 +11,12 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - name: hello world
-                run: echo "Hello World" 
-                shell: bash
+              run: echo "Hello World" 
+              shell: bash
 
-goodbye: 
-    runs-on: ubuntu-latest
-    steps:
-        - name: goodbye world
-            run: echo "Goodbye world"
-            shell: bash
+    goodbye: 
+        runs-on: ubuntu-latest
+        steps:
+            - name: goodbye world
+              run: echo "Goodbye world"
+              shell: bash
